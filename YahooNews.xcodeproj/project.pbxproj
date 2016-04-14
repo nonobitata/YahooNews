@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02DB892B1CBF43AB00F52710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DB892A1CBF43AB00F52710 /* AppDelegate.swift */; };
+		02DB892D1CBF43AB00F52710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DB892C1CBF43AB00F52710 /* ViewController.swift */; };
+		02DB89301CBF43AB00F52710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DB892E1CBF43AB00F52710 /* Main.storyboard */; };
+		02DB89331CBF43AB00F52710 /* YahooNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02DB89311CBF43AB00F52710 /* YahooNews.xcdatamodeld */; };
+		02DB89351CBF43AB00F52710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DB89341CBF43AB00F52710 /* Assets.xcassets */; };
+		02DB89381CBF43AB00F52710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DB89361CBF43AB00F52710 /* LaunchScreen.storyboard */; };
+		02DB89431CBF43AB00F52710 /* YahooNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DB89421CBF43AB00F52710 /* YahooNewsTests.swift */; };
+		02DB894E1CBF43AB00F52710 /* YahooNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DB894D1CBF43AB00F52710 /* YahooNewsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02DB893F1CBF43AB00F52710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02DB891F1CBF43AB00F52710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02DB89261CBF43AB00F52710;
+			remoteInfo = YahooNews;
+		};
+		02DB894A1CBF43AB00F52710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02DB891F1CBF43AB00F52710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02DB89261CBF43AB00F52710;
+			remoteInfo = YahooNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02DB89271CBF43AB00F52710 /* YahooNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YahooNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02DB892A1CBF43AB00F52710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02DB892C1CBF43AB00F52710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02DB892F1CBF43AB00F52710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02DB89321CBF43AB00F52710 /* YahooNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YahooNews.xcdatamodel; sourceTree = "<group>"; };
+		02DB89341CBF43AB00F52710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02DB89371CBF43AB00F52710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02DB89391CBF43AB00F52710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02DB893E1CBF43AB00F52710 /* YahooNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YahooNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02DB89421CBF43AB00F52710 /* YahooNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooNewsTests.swift; sourceTree = "<group>"; };
+		02DB89441CBF43AB00F52710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02DB89491CBF43AB00F52710 /* YahooNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YahooNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02DB894D1CBF43AB00F52710 /* YahooNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooNewsUITests.swift; sourceTree = "<group>"; };
+		02DB894F1CBF43AB00F52710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02DB89241CBF43AB00F52710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DB893B1CBF43AB00F52710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DB89461CBF43AB00F52710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02DB891E1CBF43AB00F52710 = {
+			isa = PBXGroup;
+			children = (
+				02DB89291CBF43AB00F52710 /* YahooNews */,
+				02DB89411CBF43AB00F52710 /* YahooNewsTests */,
+				02DB894C1CBF43AB00F52710 /* YahooNewsUITests */,
+				02DB89281CBF43AB00F52710 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02DB89281CBF43AB00F52710 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02DB89271CBF43AB00F52710 /* YahooNews.app */,
+				02DB893E1CBF43AB00F52710 /* YahooNewsTests.xctest */,
+				02DB89491CBF43AB00F52710 /* YahooNewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02DB89291CBF43AB00F52710 /* YahooNews */ = {
+			isa = PBXGroup;
+			children = (
+				02DB892A1CBF43AB00F52710 /* AppDelegate.swift */,
+				02DB892C1CBF43AB00F52710 /* ViewController.swift */,
+				02DB892E1CBF43AB00F52710 /* Main.storyboard */,
+				02DB89341CBF43AB00F52710 /* Assets.xcassets */,
+				02DB89361CBF43AB00F52710 /* LaunchScreen.storyboard */,
+				02DB89391CBF43AB00F52710 /* Info.plist */,
+				02DB89311CBF43AB00F52710 /* YahooNews.xcdatamodeld */,
+			);
+			path = YahooNews;
+			sourceTree = "<group>";
+		};
+		02DB89411CBF43AB00F52710 /* YahooNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				02DB89421CBF43AB00F52710 /* YahooNewsTests.swift */,
+				02DB89441CBF43AB00F52710 /* Info.plist */,
+			);
+			path = YahooNewsTests;
+			sourceTree = "<group>";
+		};
+		02DB894C1CBF43AB00F52710 /* YahooNewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02DB894D1CBF43AB00F52710 /* YahooNewsUITests.swift */,
+				02DB894F1CBF43AB00F52710 /* Info.plist */,
+			);
+			path = YahooNewsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02DB89261CBF43AB00F52710 /* YahooNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02DB89521CBF43AB00F52710 /* Build configuration list for PBXNativeTarget "YahooNews" */;
+			buildPhases = (
+				02DB89231CBF43AB00F52710 /* Sources */,
+				02DB89241CBF43AB00F52710 /* Frameworks */,
+				02DB89251CBF43AB00F52710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YahooNews;
+			productName = YahooNews;
+			productReference = 02DB89271CBF43AB00F52710 /* YahooNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02DB893D1CBF43AB00F52710 /* YahooNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02DB89551CBF43AB00F52710 /* Build configuration list for PBXNativeTarget "YahooNewsTests" */;
+			buildPhases = (
+				02DB893A1CBF43AB00F52710 /* Sources */,
+				02DB893B1CBF43AB00F52710 /* Frameworks */,
+				02DB893C1CBF43AB00F52710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02DB89401CBF43AB00F52710 /* PBXTargetDependency */,
+			);
+			name = YahooNewsTests;
+			productName = YahooNewsTests;
+			productReference = 02DB893E1CBF43AB00F52710 /* YahooNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02DB89481CBF43AB00F52710 /* YahooNewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02DB89581CBF43AB00F52710 /* Build configuration list for PBXNativeTarget "YahooNewsUITests" */;
+			buildPhases = (
+				02DB89451CBF43AB00F52710 /* Sources */,
+				02DB89461CBF43AB00F52710 /* Frameworks */,
+				02DB89471CBF43AB00F52710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02DB894B1CBF43AB00F52710 /* PBXTargetDependency */,
+			);
+			name = YahooNewsUITests;
+			productName = YahooNewsUITests;
+			productReference = 02DB89491CBF43AB00F52710 /* YahooNewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02DB891F1CBF43AB00F52710 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = TrungDo;
+				TargetAttributes = {
+					02DB89261CBF43AB00F52710 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					02DB893D1CBF43AB00F52710 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 02DB89261CBF43AB00F52710;
+					};
+					02DB89481CBF43AB00F52710 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 02DB89261CBF43AB00F52710;
+					};
+				};
+			};
+			buildConfigurationList = 02DB89221CBF43AB00F52710 /* Build configuration list for PBXProject "YahooNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02DB891E1CBF43AB00F52710;
+			productRefGroup = 02DB89281CBF43AB00F52710 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02DB89261CBF43AB00F52710 /* YahooNews */,
+				02DB893D1CBF43AB00F52710 /* YahooNewsTests */,
+				02DB89481CBF43AB00F52710 /* YahooNewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02DB89251CBF43AB00F52710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DB89381CBF43AB00F52710 /* LaunchScreen.storyboard in Resources */,
+				02DB89351CBF43AB00F52710 /* Assets.xcassets in Resources */,
+				02DB89301CBF43AB00F52710 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DB893C1CBF43AB00F52710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DB89471CBF43AB00F52710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02DB89231CBF43AB00F52710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DB89331CBF43AB00F52710 /* YahooNews.xcdatamodeld in Sources */,
+				02DB892D1CBF43AB00F52710 /* ViewController.swift in Sources */,
+				02DB892B1CBF43AB00F52710 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DB893A1CBF43AB00F52710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DB89431CBF43AB00F52710 /* YahooNewsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DB89451CBF43AB00F52710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DB894E1CBF43AB00F52710 /* YahooNewsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02DB89401CBF43AB00F52710 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02DB89261CBF43AB00F52710 /* YahooNews */;
+			targetProxy = 02DB893F1CBF43AB00F52710 /* PBXContainerItemProxy */;
+		};
+		02DB894B1CBF43AB00F52710 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02DB89261CBF43AB00F52710 /* YahooNews */;
+			targetProxy = 02DB894A1CBF43AB00F52710 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02DB892E1CBF43AB00F52710 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02DB892F1CBF43AB00F52710 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02DB89361CBF43AB00F52710 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02DB89371CBF43AB00F52710 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02DB89501CBF43AB00F52710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02DB89511CBF43AB00F52710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02DB89531CBF43AB00F52710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YahooNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrungDo.YahooNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		02DB89541CBF43AB00F52710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YahooNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrungDo.YahooNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		02DB89561CBF43AB00F52710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YahooNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrungDo.YahooNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YahooNews.app/YahooNews";
+			};
+			name = Debug;
+		};
+		02DB89571CBF43AB00F52710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YahooNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrungDo.YahooNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YahooNews.app/YahooNews";
+			};
+			name = Release;
+		};
+		02DB89591CBF43AB00F52710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YahooNewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrungDo.YahooNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YahooNews;
+			};
+			name = Debug;
+		};
+		02DB895A1CBF43AB00F52710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YahooNewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrungDo.YahooNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YahooNews;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02DB89221CBF43AB00F52710 /* Build configuration list for PBXProject "YahooNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DB89501CBF43AB00F52710 /* Debug */,
+				02DB89511CBF43AB00F52710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02DB89521CBF43AB00F52710 /* Build configuration list for PBXNativeTarget "YahooNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DB89531CBF43AB00F52710 /* Debug */,
+				02DB89541CBF43AB00F52710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		02DB89551CBF43AB00F52710 /* Build configuration list for PBXNativeTarget "YahooNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DB89561CBF43AB00F52710 /* Debug */,
+				02DB89571CBF43AB00F52710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		02DB89581CBF43AB00F52710 /* Build configuration list for PBXNativeTarget "YahooNewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DB89591CBF43AB00F52710 /* Debug */,
+				02DB895A1CBF43AB00F52710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		02DB89311CBF43AB00F52710 /* YahooNews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				02DB89321CBF43AB00F52710 /* YahooNews.xcdatamodel */,
+			);
+			currentVersion = 02DB89321CBF43AB00F52710 /* YahooNews.xcdatamodel */;
+			path = YahooNews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 02DB891F1CBF43AB00F52710 /* Project object */;
+}
