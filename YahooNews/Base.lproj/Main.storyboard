@@ -1,25 +1,143 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yLe-Su-jib">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="Cxd-6w-Nd1">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="yLe-Su-jib" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yac-2j-har">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="drC-Fp-rlK" kind="relationship" relationship="rootViewController" id="Cve-9K-FXs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="52x-3Y-ZTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-56" y="-137"/>
+        </scene>
+        <!--Yahoo! News-->
+        <scene sceneID="w4X-et-Oej">
+            <objects>
+                <viewController id="drC-Fp-rlK" customClass="ViewController" customModule="YahooNews" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="7fQ-CO-XJU"/>
+                        <viewControllerLayoutGuide type="bottom" id="4FE-AZ-5dC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="fXr-ZF-sve">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="141" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y3U-rh-T44">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="customCell" rowHeight="141" id="HsY-X8-w01" customClass="CustomNewsTVCell" customModule="YahooNews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="141"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HsY-X8-w01" id="xDz-ch-hfO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="141"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9V-oI-jsF">
+                                                    <rect key="frame" x="184" y="8" width="395" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="dzH-ai-EUb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PX5-Js-b0G">
+                                                    <rect key="frame" x="184" y="60" width="395" height="62"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6rc-TF-0QS">
+                                                    <rect key="frame" x="19" y="24" width="145" height="94"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="145" id="jG6-5N-WPa"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="N9V-oI-jsF" firstAttribute="leading" secondItem="PX5-Js-b0G" secondAttribute="leading" id="9GK-iZ-zht"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PX5-Js-b0G" secondAttribute="trailing" constant="13" id="LdS-Ob-SsU"/>
+                                                <constraint firstItem="N9V-oI-jsF" firstAttribute="trailing" secondItem="xDz-ch-hfO" secondAttribute="trailingMargin" constant="-13" id="Tad-l8-vA3"/>
+                                                <constraint firstItem="6rc-TF-0QS" firstAttribute="top" secondItem="xDz-ch-hfO" secondAttribute="topMargin" constant="16" id="Vp1-AA-Bth"/>
+                                                <constraint firstItem="N9V-oI-jsF" firstAttribute="leading" secondItem="6rc-TF-0QS" secondAttribute="trailing" constant="20" id="Z8D-rL-xzg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="PX5-Js-b0G" secondAttribute="bottom" constant="10.5" id="kpz-BP-n21"/>
+                                                <constraint firstItem="N9V-oI-jsF" firstAttribute="top" secondItem="xDz-ch-hfO" secondAttribute="topMargin" id="nbm-59-awh"/>
+                                                <constraint firstItem="6rc-TF-0QS" firstAttribute="leading" secondItem="xDz-ch-hfO" secondAttribute="leadingMargin" constant="11" id="uAE-9j-KZy"/>
+                                                <constraint firstItem="PX5-Js-b0G" firstAttribute="top" secondItem="N9V-oI-jsF" secondAttribute="bottom" constant="8" symbolic="YES" id="x4o-Hl-Mn5"/>
+                                                <constraint firstItem="6rc-TF-0QS" firstAttribute="centerY" secondItem="xDz-ch-hfO" secondAttribute="centerY" id="yEJ-Xm-H60"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsImage" destination="6rc-TF-0QS" id="Ggn-TB-KWI"/>
+                                            <outlet property="summaryLabel" destination="PX5-Js-b0G" id="BJV-uR-vXp"/>
+                                            <outlet property="titleLabel" destination="N9V-oI-jsF" id="HNM-F7-RJh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y3U-rh-T44" firstAttribute="top" secondItem="7fQ-CO-XJU" secondAttribute="bottom" id="04h-eL-rKo"/>
+                            <constraint firstItem="y3U-rh-T44" firstAttribute="leading" secondItem="fXr-ZF-sve" secondAttribute="leading" id="8vb-z7-Sqk"/>
+                            <constraint firstAttribute="trailing" secondItem="y3U-rh-T44" secondAttribute="trailing" id="hEX-Ub-Le0"/>
+                            <constraint firstItem="y3U-rh-T44" firstAttribute="bottom" secondItem="4FE-AZ-5dC" secondAttribute="top" id="o3a-Ij-eGz"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Yahoo! News" id="RqW-Gd-p0c"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="y3U-rh-T44" id="DNS-kr-N4w"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qve-ep-n1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="742" y="-98"/>
+        </scene>
+        <!--News Content Web View Controller-->
+        <scene sceneID="lAV-WX-RfX">
+            <objects>
+                <viewController storyboardIdentifier="NewsContentVC" id="7L4-m0-fo6" customClass="NewsContentWebViewController" customModule="YahooNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a8Z-RK-2sA"/>
+                        <viewControllerLayoutGuide type="bottom" id="WGN-Wd-AVJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GM2-Ym-dQg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zb-XJ-0ra">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4zb-XJ-0ra" firstAttribute="top" secondItem="GM2-Ym-dQg" secondAttribute="top" id="7Mm-84-5eu"/>
+                            <constraint firstItem="4zb-XJ-0ra" firstAttribute="bottom" secondItem="WGN-Wd-AVJ" secondAttribute="top" id="BMK-4A-MEi"/>
+                            <constraint firstAttribute="trailing" secondItem="4zb-XJ-0ra" secondAttribute="trailing" id="HoY-vk-ZPG"/>
+                            <constraint firstItem="4zb-XJ-0ra" firstAttribute="leading" secondItem="GM2-Ym-dQg" secondAttribute="leading" id="mtA-jJ-hgv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webContentView" destination="4zb-XJ-0ra" id="fVl-PE-vT7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVj-p4-Zq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="-98"/>
         </scene>
     </scenes>
 </document>

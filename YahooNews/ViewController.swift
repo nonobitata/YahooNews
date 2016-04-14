@@ -8,18 +8,85 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+
+    @IBOutlet weak var newsTableView: UITableView!
+    let data = DataCenterClass()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
+        // Do any additional setup after loading the view, typically from a nib.
+        let seconds = 1.0
+        let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
+        let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        
+        dispatch_after(dispatchTime, dispatch_get_main_queue(), {
+
+//            self.data.printAll()
+//            print ("SIZE: \(self.data.allArticleArray.count)")
+          
+            self.newsTableView.reloadData()
+
+        })
+        self.newsTableView.delegate = self
+        self.newsTableView.dataSource = self
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+//    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+//        return 1;
+//    }
+//        
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print ("SIZE: \(self.data.allArticleArray.count)")
+        if (data.empty()) {
+            return 0;
+        } else {
+            return data.allArticleArray.count;
+        }
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        let cell:CustomNewsTVCell = self.newsTableView.dequeueReusableCellWithIdentifier("customCell") as! CustomNewsTVCell
+        
+        let cell = self.newsTableView.dequeueReusableCellWithIdentifier("customCell") as! CustomNewsTVCell
+      
+        let anArticle:OneArticle =  data.allArticleArray[indexPath.row]
+//        print("HIHI: \(anArticle.title)")
+      
 
+        cell.loadItem(anArticle.title, imgURL: anArticle.imgURL, summary: anArticle.summary,webURL: anArticle.webURL)
+        //reach to the end of the UI Table View
+        if (indexPath.row == data.allArticleArray.count-1 ){
+            self.reloadData()
+        }
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let newsVC = self.storyboard?.instantiateViewControllerWithIdentifier("NewsContentVC") as? NewsContentWebViewController
+        newsVC?.webURL = data.allArticleArray[indexPath.row].webURL
+        self.navigationController?.pushViewController(newsVC!, animated: true)
+    }
+    func reloadData(){
+        self.data.reloadDatabase()
+        let seconds = 2.0
+        let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
+        let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        
+        dispatch_after(dispatchTime, dispatch_get_main_queue(), {
+            
+            self.newsTableView.reloadData()
+
+            
+        })
+    }
 
 }
 
