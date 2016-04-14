@@ -13,7 +13,6 @@ class OneArticle{
     var title = String()
     var summary = String()
     var imgURL = String()
-    var img = UIImage()
     var webURL = String()
     init(){
         
