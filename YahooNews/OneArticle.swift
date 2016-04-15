@@ -14,14 +14,16 @@ class OneArticle{
     var summary = String()
     var imgURL = String()
     var webURL = String()
+    var time = String()
     init(){
         
     }
-    init(title: String, shortDescription: String, imgURL: String,webURL: String  ){
+    init(title: String, shortDescription: String, imgURL: String,webURL: String,time: String  ){
         self.title = title
         self.summary = shortDescription
         self.imgURL = imgURL
         self.webURL = webURL
+        self.time = time
     }
     
     

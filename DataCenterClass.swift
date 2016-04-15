@@ -89,7 +89,7 @@ class DataCenterClass{
                     let query: NSDictionary = json["result"] as! NSDictionary
                     if let articleArray = query["items"] as? [[String: AnyObject]] {
                         for article in articleArray {
-                            let newArticle = OneArticle(title: "",shortDescription: "",imgURL: "",webURL: "")
+                            let newArticle = OneArticle(title: "",shortDescription: "",imgURL: "",webURL: "",time: "")
                             if let name = article["title"] as? String {
                                 newArticle.title = name
                             }
@@ -104,6 +104,9 @@ class DataCenterClass{
                             if let webURL = article["link"] as? String {
                                 newArticle.webURL = webURL
                                 
+                            }
+                            if let time = article["published"] as? String{
+                                newArticle.time = time
                             }
                             //newArticle.setImg()
                             self.allArticleArray.append(newArticle)

@@ -17,7 +17,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let seconds = 1.0
+        let seconds = 2.0
         let delay = seconds * Double(NSEC_PER_SEC)
         let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
         dispatch_after(dispatchTime, dispatch_get_main_queue(), {
@@ -49,7 +49,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         let anArticle:OneArticle =  data.allArticleArray[indexPath.row]
         let url = NSURL(string: anArticle.imgURL )
         cell.newsImage.sd_setImageWithURL(url)
-        cell.loadItem(anArticle.title, imgURL: anArticle.imgURL, summary: anArticle.summary,webURL: anArticle.webURL)
+        cell.loadItem(anArticle.title, imgURL: anArticle.imgURL, summary: anArticle.summary,webURL: anArticle.webURL,time: anArticle.time)
         
         //reach to the end of the UI Table View
         if (indexPath.row == data.allArticleArray.count-1 ){

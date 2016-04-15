@@ -15,16 +15,20 @@ class CustomNewsTVCell: UITableViewCell{
     @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var newsImage: UIImageView!
     var webURL = String()
+    @IBOutlet weak var timeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
-    func loadItem(title: String, imgURL: String, summary: String, webURL: String) {
+    func loadItem(title: String, imgURL: String, summary: String, webURL: String,time: String) {
         
         self.titleLabel.text = title
         self.summaryLabel.text = summary
         self.webURL = webURL
+        let date = time.substringWithRange(Range<String.Index>(start: time.startIndex, end: time.startIndex.advancedBy(10)))
+        let hour = time.substringWithRange(Range<String.Index>(start: time.startIndex.advancedBy(11), end: time.endIndex.advancedBy(-1)))
         
+        self.timeLabel.text = String(format: "\(date) at  \(hour)")
     }
 }
